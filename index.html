@@ -26,44 +26,71 @@
     </style>
   </head>
   <body>
-    <div class="card">
-      <div class="sub-container">
-        <a href="">
+    <main class="card">
+      <section class="sub-container">
+        <!-- card-image -->
+        <a href="#" aria-label="Linked to Equilibrium Collection">
           <div class="img-container"></div>
         </a>
-        <a class="title" href="#">Equilibrium #3429</a>
+
+        <!-- title -->
+        <h1 class="title" aria-label="Linked to Equilibrium Collection">
+          Equilibrium #3429
+        </h1>
+
+        <!-- description -->
         <p class="description">
           Our Equilibrium collection promotes balance and calm.
         </p>
-        <div class="card-price">
-          <span class="eth-price-detail">
-            <img src="./images/icon-ethereum.svg" alt="ethereum-logo" />
-            <span>0.041ETH</span>
-          </span>
-          <span class="badge">
-            <img src="./images/icon-clock.svg" alt="" />
-            <span class="badge-text">3 days left</span>
-          </span>
-        </div>
-        <hr />
-        <div class="footer">
+
+        <!-- price and timeline -->
+        <ul class="card-price">
+          <li class="card-lists">
+            <img
+              class="badge"
+              src="./images/icon-ethereum.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <p>0.041ETH</p>
+          </li>
+          <li class="card-lists">
+            <img
+              class="badge"
+              src="./images/icon-clock.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <p>3 days left</p>
+          </li>
+        </ul>
+
+        <div class="avatar">
           <img
             class="user-img"
             src="./images/image-avatar.png"
-            alt="image-avatar"
+            alt="Jules Wyvern"
           />
-          Creation of <a href="#" class="user-name">&nbsp; Jules Wyvern</a>
+          Creation of
+          <a href="#" class="user-name">&nbsp; Jules Wyvern</a>
         </div>
-      </div>
-    </div>
-    <div class="attribution">
+      </section>
+    </main>
+
+    <footer class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        rel="noopener noreferrer"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
         >Frontend Mentor</a
       >. Coded by
-      <a href="https://cirejm07.github.io/portfolio/" target="_blank"
+      <a
+        rel="noopener noreferrer"
+        href="https://cirejm07.github.io/portfolio/"
+        target="_blank"
         >Jeric Moreno</a
       >.
-    </div>
+    </footer>
   </body>
 </html>

@@ -35,11 +35,12 @@ a{
     color: var(--white);
 }
 
-a:active {
+a:hover {
     color: var(--cyan);
 }
 
 .card {
+    margin-top: auto;
     width: 50%;
     max-width: 350px;
     min-width: 19.5rem;
@@ -73,7 +74,7 @@ a:active {
     overflow: hidden;
 }
 
-.img-container:active::after {
+.img-container:hover::after {
     content: '';
     position: absolute;
     left: 0;
@@ -85,7 +86,7 @@ a:active {
 }
 
 
-.img-container:active::before {
+.img-container:hover::before {
     content: url('./images/icon-view.svg');
     position: absolute;
     left: 0;
@@ -101,7 +102,12 @@ a:active {
     font-weight: 500;
     font-size: 1.3rem;
     display: block;
+    cursor: pointer;
 }
+
+    .title:hover {
+        color: var(--cyan);
+    }
 
 .description {
     margin-bottom: 1.5rem;
@@ -111,46 +117,36 @@ a:active {
 .card-price {
     display: flex;
     justify-content: space-between;
+    list-style: none;
 }
 
-.eth-price-detail {
+.card-lists {
     display: flex;
-    justify-content: center;
+    justify-content: cen;
     align-items: center;
+    color: var(--soft-blue);
 }
 
-    .eth-price-detail span {
+    .card-lists p {
         margin-left: 0.5rem;
+    }
+
+    .card-lists:first-of-type p {
         color: var(--cyan);
     }
 
-.badge {
-    color: var(--soft-blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-    .badge span {
-        margin-left: 0.5rem;
-    }
-
-hr {
-    width: 100%;
-    margin: 1rem auto;
-    height: 1px;
-    background-color: var(--line);
-    border: none;
-}
-
-.footer {
+.avatar {
+    border-top: 1px solid var(--line);
+    margin-top: 1rem;
+    padding-top: 1rem;
     display: flex;
     justify-content: start;
     align-items: center;
     color: var(--soft-blue);
 }
 
-    .footer .user-img {
+    .avatar .user-img {
         width: 2rem;
         border: 1px solid var(--white);
         border-radius: 50%;
@@ -158,6 +154,13 @@ hr {
         margin-right: 1rem;
     }
 
-    .footer span {
+    .avatar span {
         color: var(--white);
     }
+
+footer{
+    margin-top: auto;
+    background-color: var(--soft-blue);
+    width: 100%;
+    padding: 1rem;
+}
